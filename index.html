@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Frequency Portal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="matrix-bg" aria-hidden="true"></div>
+
+    <main class="app-shell">
+      <section class="portal-gate" id="gateSection">
+        <p class="frequency-tag">843Hz Quantum Resonance</p>
+        <h1>Universe Scroll</h1>
+        <p class="question">Wat is het materie dat zwart is?</p>
+
+        <form id="unlockForm" class="unlock-form">
+          <input
+            id="answerInput"
+            type="text"
+            autocomplete="off"
+            placeholder="Typ het geheime antwoord..."
+            aria-label="Antwoord"
+            required
+          />
+          <button type="submit">Open Universe Scroll</button>
+        </form>
+
+        <p id="feedback" class="feedback" aria-live="polite"></p>
+      </section>
+
+      <section class="chat-portal hidden" id="chatSection">
+        <div class="chat-header">
+          <h2>Quantum Portal Chat</h2>
+          <p>Verbonden op 843Hz stroom</p>
+        </div>
+
+        <form id="nicknameForm" class="nickname-form">
+          <label for="nickname">Kies je nickname</label>
+          <div class="nickname-row">
+            <input
+              id="nickname"
+              type="text"
+              minlength="2"
+              maxlength="20"
+              placeholder="bijv. NebulaRider"
+              required
+            />
+            <button type="submit">Enter Portal</button>
+          </div>
+        </form>
+
+        <div class="chat-room hidden" id="chatRoom">
+          <div class="chat-actions">
+            <span id="identity"></span>
+            <button id="fallbackBtn" type="button">Geen connectie? Open ChatGPT</button>
+          </div>
+          <div id="messages" class="messages" aria-live="polite"></div>
+
+          <form id="messageForm" class="message-form">
+            <input
+              id="messageInput"
+              type="text"
+              maxlength="280"
+              placeholder="Zend je quantum bericht..."
+              required
+            />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
